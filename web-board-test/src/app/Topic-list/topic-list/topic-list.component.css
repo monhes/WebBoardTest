@@ -1,0 +1,40 @@
+.flex-container{
+    display: flex;
+    justify-content: center; 
+
+    padding-top: 2rem;   
+ 
+}
+
+.flex-box{ 
+    display: flex;
+    flex-direction: column;
+    width: 100vh; 
+}
+
+.top-button{
+    display: flex;
+     
+}
+
+.topic-list{
+    display: flex;
+    flex-direction: row;  
+}
+
+.topic-list div{
+    text-align: center;
+    border: solid;
+    border-width: 0.5px;
+}
+
+.topic{
+    width: 60%;
+}
+.author{
+    width: 20%;
+}
+.date{
+    width: 20%;
+}
+
