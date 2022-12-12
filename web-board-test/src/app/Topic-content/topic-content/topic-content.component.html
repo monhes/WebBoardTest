@@ -1,0 +1,20 @@
+<div class="flex-container">
+    <div>
+        <form [formGroup]="commentInfo" (submit)="submitComment()" class="flex-box">
+        <div *ngFor="let topic of (DisplayTopic|async)" class="flex-list head-box">
+            <div class="user"><h4>{{topic.Name}}</h4></div>
+            <div class="content">
+                <h3>{{topic.Header}}</h3>
+                <p class="subcontext">{{topic.Content}}</p>
+            </div>
+        </div>
+        
+        <div *ngFor="let com of (DisplayComments|async)" class="flex-list comment-box">
+            <div class="user"><h4>{{com.UserName}}</h4></div>
+            <div class="content"><p class="subcontext">{{com.Comment}}</p></div>
+        </div> 
+        <div><input type="text" placeholder="Comment . . ." formControlName="Comment" class="text-input"></div>
+        <div><button class="button-comment">submit</button></div>
+        </form>
+    </div>
+</div> 

@@ -1,0 +1,56 @@
+.flex-container{
+    display: flex;
+    justify-content: center;
+
+    padding-top: 2rem;  
+ }
+
+.flex-box{
+    border: solid;
+    display: flex;
+    flex-direction: column;
+    width: 100vh; 
+}
+
+.flex-list{
+    display: flex;
+    flex-direction: row; 
+}
+
+.head-box{
+    background-color: rgb(214, 208, 97);
+    display: flex;
+    align-items: center;
+    overflow: auto;
+}
+
+.comment-box{
+    background-color: #69d3d7;
+    display: flex;
+    align-items: center;
+}
+
+.text-input{
+    width: 99%;
+}
+
+.button-comment{
+    float: right;
+}
+
+.user{
+    width: 15%;
+    text-align: center;
+    overflow: hidden;
+}
+.content{
+    width: 85%;
+    padding-left: 1rem;
+    border-left: solid;
+    border-width: 0.3px;
+}
+
+.subcontext{
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+}
