@@ -1,0 +1,15 @@
+ <div class="flex-container">
+    <div>
+        <form [formGroup]="topicInfo" (submit)="createTopic()"  class="flex-box">
+            <div>
+                <input type="text" placeholder="Header" formControlName="Header">
+            </div>
+            <div>
+                <textarea class="topic-content" placeholder="Content" formControlName="Content"></textarea>
+            </div>
+            <div class="bot-button">
+                <button type="submit" [disabled]="topicInfo.invalid">create topic</button>
+            </div>
+        </form>
+    </div>
+ </div>
