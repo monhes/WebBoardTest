@@ -11,7 +11,6 @@ import { UserLoginComponent } from './Login/user-login/user-login.component';
 import { TopicContentComponent } from './Topic-content/topic-content/topic-content.component';
 import { TopicCreateComponent } from './Topic-create/topic-create/topic-create.component';
 import { TopicListComponent } from './Topic-list/topic-list/topic-list.component';
-import { UserRegistComponent } from './Regist/user-regist/user-regist.component';
 
 
 @NgModule({
@@ -21,7 +20,6 @@ import { UserRegistComponent } from './Regist/user-regist/user-regist.component'
     TopicContentComponent,
     TopicCreateComponent,
     TopicListComponent,
-    UserRegistComponent
   ],
   imports: [
     HttpClientModule,
