@@ -7,7 +7,8 @@ import { User } from 'src/app/Models/User';
 })
 export class UserService {
 
-  public localUrl: string = "https://localhost:7200/api/Topic";
+  //public localUrl: string = "https://localhost:7200/api/Topic";
+  public localUrl: string = "https://thudentrylevel.azurewebsites.net/api/topic";
   temp:any
   constructor(private http:HttpClient) { }
 

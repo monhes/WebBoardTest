@@ -10,7 +10,7 @@
             <div class="date"><h3>DATE</h3></div>
         </div>
         <div *ngFor="let list of (TopicList | async)" class="topic-list">
-            <div class="topic"><a [routerLink]="['/topiccontent', list.Id]">{{list.Header}} {{list.Id}}</a></div>
+            <div class="topic"><a [routerLink]="['/topiccontent', list.Id]">{{list.Header}}</a></div>
             <div class="author">{{list.Name}}</div>
             <div class="date">{{list.Date | date: 'dd/MM/yyyy'}}</div>
         </div>

@@ -19,6 +19,6 @@ export class LoggedinService {
   }
 
   gotologinPage(){
-    this.router.navigate(['/login'])
+    this.router.navigate(['/'])
   }
 }

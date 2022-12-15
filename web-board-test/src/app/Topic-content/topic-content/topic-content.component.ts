@@ -7,6 +7,7 @@ import { Comments } from 'src/app/Models/Comments';
 import { Topic } from 'src/app/Models/Topic';
 import { TopicList } from 'src/app/Models/TopicList';
 import { TopicSub } from 'src/app/Models/TopicSub';
+import { LoggedinService } from 'src/app/Service/loggedin.service';
 import { TopicService } from 'src/app/Service/TopicService/topic.service';
 
 @Component({
@@ -26,9 +27,10 @@ export class TopicContentComponent implements OnInit {
   commentValue:TopicSub[] = []
 
   constructor(private fb: FormBuilder,private http: HttpClient,private route: ActivatedRoute,private topServe:TopicService,
-    private router: Router) { }
+    private router: Router,private logged: LoggedinService) { }
 
   ngOnInit(): void {
+    this.logged.checkLogin()
     this.commentInfo = this.fb.group({
       IdUser:[''],
       IdTopicMain:[''],
@@ -70,7 +72,7 @@ export class TopicContentComponent implements OnInit {
   }
 
   go(){
-    this.router.navigate(['/login']);
+    this.router.navigate(['/']);
   }
 
 }

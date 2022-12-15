@@ -8,7 +8,8 @@ import { TopicSub } from 'src/app/Models/TopicSub';
 })
 export class TopicService {
 
-  localUrl: string = "https://localhost:7200/api/Topic";
+  //public localUrl: string = "https://localhost:7200/api/Topic";
+  public localUrl: string = "https://thudentrylevel.azurewebsites.net/api/topic";
 
   constructor(private http:HttpClient) { }
 

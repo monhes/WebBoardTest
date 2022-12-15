@@ -30,7 +30,7 @@ import { UserRegistComponent } from './Regist/user-regist/user-regist.component'
     BrowserModule,
     AppRoutingModule,
     RouterModule.forRoot([
-      {path:'login',component: UserLoginComponent},
+      {path:'',component: UserLoginComponent},
       {path:'topiclist',component: TopicListComponent},
       {path:'topiccreate',component:TopicCreateComponent},
       {path:'topiccontent/:TopicId',component:TopicContentComponent} 
